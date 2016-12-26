@@ -2,7 +2,7 @@
 
 language: r
 sudo: false
-cache: required
+cache: packages
 
 r_check_args: '--as-cran --use-valgrind'
 
@@ -11,11 +11,11 @@ addons:
     packages:
       - valgrind
 
-env:
-  - VALGRIND_OPTS='--leak-check=full --track-origins=yes'
+# env:
+#   - VALGRIND_OPTS='--leak-check=full --track-origins=yes'
 
-before_script:
-  - echo 'sudo mv ./.valgrindrc $HOME'
-
-after_install:
+before_install:
+  - "head ~/.valgrindrc || echo '~/.valgrindrc does not exist'"
+  - echo VALGRIND_OPTS: $VALGRIND_OPTS
+  - cat ./valgrindrc >> ~/.valgrindrc
 
