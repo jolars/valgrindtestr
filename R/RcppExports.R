@@ -9,7 +9,7 @@
 #' @return Stuff.
 #'
 #' @examples
-#' repeat(ouch, 10)
+#' replicate(ouch(), 10)
 #'
 #' @export
 ouch <- function() {

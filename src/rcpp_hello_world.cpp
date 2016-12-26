@@ -13,7 +13,7 @@ using namespace Rcpp;
 //' @return Stuff.
 //'
 //' @examples
-//' repeat(ouch, 10)
+//' replicate(ouch(), 10)
 //'
 //' @export
 // [[Rcpp::export]]
