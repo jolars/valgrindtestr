@@ -4,7 +4,7 @@ language: r
 sudo: false
 cache: required
 
-r_check_args: '--use-valgrind'
+r_check_args: '--as-cran --use-valgrind'
 
 addons:
   apt:
