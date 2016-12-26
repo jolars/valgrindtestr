@@ -7,7 +7,7 @@ Description: This is a minimal Rcpp package that tests the use of
     R CMD check with the --use-valgrind option.
 Depends:
     R (>= 3.3.1)
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: Rcpp

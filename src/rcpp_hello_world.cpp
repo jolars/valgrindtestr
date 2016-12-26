@@ -1,4 +1,4 @@
-// Set up a leak
+// Set up a leaky function
 
 #include <Rcpp.h>
 
