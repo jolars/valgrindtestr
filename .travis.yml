@@ -2,7 +2,7 @@
 
 language: r
 sudo: false
-cache: packages
+cache: required
 
 r_check_args: '--use-valgrind'
 
@@ -12,4 +12,7 @@ addons:
       - valgrind
 
 env:
-  - VALGRIND_OPTS=--leak-check=full
+  - VALGRIND_OPTS='--leak-check=full --track-origins=yes'
+
+before_script:
+  - echo 'sudo mv ./.valgrindrc $HOME'
