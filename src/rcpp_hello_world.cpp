@@ -1,6 +1,8 @@
 // Set up a leaky function
 
 #include <Rcpp.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 using namespace Rcpp;
 
@@ -13,13 +15,19 @@ using namespace Rcpp;
 //' @return Stuff.
 //'
 //' @examples
-//' replicate(10, ouch())
-//' replicate(ouch(), 10)
+//' ouch()
 //'
 //' @export
 // [[Rcpp::export]]
-NumericVector ouch() {
-  NumericVector x(10);
-  x[1000000] = 1;
-  return x;
+
+void ouch() {
+  int i, j;
+  int a[10], b[10];
+
+  for ( i = 0; i < 10; i++ ) {
+    j += a[i];
+  }
+  if ( j == 77 )
+    printf("hello there\n");
 }
+
