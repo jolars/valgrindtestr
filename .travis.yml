@@ -12,8 +12,6 @@ addons:
       - valgrind
 
 env:
-  - VALGRIND_OPTS='--leak-check=full --track-origins=yes --verbose'
+  - VALGRIND_OPTS='--leak-check=full --track-origins=yes'
 
-#before_install:
-#  - cat ./.valgrindrc >> ~/.valgrindrc
 
