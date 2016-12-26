@@ -6,12 +6,11 @@
 using namespace Rcpp;
 
 // ouch
-NumericVector ouch();
+void ouch();
 RcppExport SEXP valgrindtestr_ouch() {
 BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(ouch());
-    return rcpp_result_gen;
+    ouch();
+    return R_NilValue;
 END_RCPP
 }

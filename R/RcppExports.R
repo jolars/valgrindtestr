@@ -9,11 +9,10 @@
 #' @return Stuff.
 #'
 #' @examples
-#' replicate(10, ouch())
-#' replicate(ouch(), 10)
+#' ouch()
 #'
 #' @export
 ouch <- function() {
-    .Call('valgrindtestr_ouch', PACKAGE = 'valgrindtestr')
+    invisible(.Call('valgrindtestr_ouch', PACKAGE = 'valgrindtestr'))
 }
 

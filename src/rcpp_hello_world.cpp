@@ -1,8 +1,6 @@
 // Set up a leaky function
 
 #include <Rcpp.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 using namespace Rcpp;
 
