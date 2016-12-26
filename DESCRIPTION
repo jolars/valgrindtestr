@@ -1,9 +1,10 @@
 Package: valgrindtestr
-Title: Tests valgrindr integration via travis CI.
+Title: Test Valgrind Integration on Travis CI
 Version: 0.0.0.9000
 Authors@R: person("Johan", "Larsson", email = "johanlarsson@outlook.com",
                   role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: This is a minimal Rcpp package that tests the use of
+    R CMD check with the --use-valgrind option.
 Depends:
     R (>= 3.3.1)
 License: What license is it under?
