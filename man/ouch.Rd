@@ -14,7 +14,7 @@ This function introduces a memory leak that is supposed to trigger
 valgrind and throw and error in R CMD check.
 }
 \examples{
-replicate(ouch(), 10)
+replicate(10, ouch())
 
 }
 
