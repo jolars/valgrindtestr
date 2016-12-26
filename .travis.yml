@@ -11,5 +11,5 @@ addons:
     packages:
       - valgrind
 
-before_install:
-  - echo 'sudo mv .valgrindrc $HOME'
+env:
+  - VALGRIND_OPTS=--leak-check=full
