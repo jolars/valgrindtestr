@@ -9,10 +9,10 @@
 #' @return Stuff.
 #'
 #' @examples
-#' ouch()
+#' mistake()
 #'
 #' @export
-ouch <- function() {
-    invisible(.Call('valgrindtestr_ouch', PACKAGE = 'valgrindtestr'))
+mistake <- function() {
+    .Call('valgrindtestr_mistake', PACKAGE = 'valgrindtestr')
 }
 

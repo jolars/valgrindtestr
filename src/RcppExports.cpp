@@ -5,12 +5,13 @@
 
 using namespace Rcpp;
 
-// ouch
-void ouch();
-RcppExport SEXP valgrindtestr_ouch() {
+// mistake
+bool mistake();
+RcppExport SEXP valgrindtestr_mistake() {
 BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    ouch();
-    return R_NilValue;
+    rcpp_result_gen = Rcpp::wrap(mistake());
+    return rcpp_result_gen;
 END_RCPP
 }
