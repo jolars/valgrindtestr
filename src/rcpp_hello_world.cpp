@@ -13,19 +13,15 @@ using namespace Rcpp;
 //' @return Stuff.
 //'
 //' @examples
-//' ouch()
+//' mistake()
 //'
 //' @export
 // [[Rcpp::export]]
 
-void ouch() {
-  int i, j;
-  int a[10], b[10];
-
-  for ( i = 0; i < 10; i++ ) {
-    j += a[i];
-  }
-  if ( j == 77 )
-    printf("hello there\n");
+bool mistake() {
+  NumericVector x(1);
+  int n = INT_MAX;
+  x[n] = 0;
+  return true;
 }
 
