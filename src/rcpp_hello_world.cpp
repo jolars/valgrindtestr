@@ -8,7 +8,7 @@ using namespace Rcpp;
 //' Red flag
 //'
 //' This function introduces a memory leak that is supposed to trigger
-//' valgrind and throw and error in R CMD check.
+//' valgrind and throw an error in R CMD check.
 //'
 //' @return Stuff.
 //'

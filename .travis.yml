@@ -10,3 +10,6 @@ addons:
   apt:
     packages:
       - valgrind
+
+before_install:
+  - echo 'sudo mv .valgrindrc $HOME'
