@@ -15,6 +15,6 @@ addons:
 #   - VALGRIND_OPTS='--leak-check=full --track-origins=yes'
 
 before_install:
-  - "head ~/.valgrindrc || echo '~/.valgrindrc does not exist'"
-  - cat ./valgrindrc >> ~/.valgrindrc
+  - "head ./valgrindrc || echo './valgrindrc does not exist'"
+  - cat ./.valgrindrc >> ~/.valgrindrc
 
