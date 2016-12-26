@@ -14,6 +14,7 @@ using namespace Rcpp;
 //'
 //' @examples
 //' replicate(10, ouch())
+//' replicate(ouch(), 10)
 //'
 //' @export
 // [[Rcpp::export]]

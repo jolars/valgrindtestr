@@ -16,3 +16,6 @@ env:
 
 before_script:
   - echo 'sudo mv ./.valgrindrc $HOME'
+
+after_install:
+
