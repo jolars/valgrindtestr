@@ -11,7 +11,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: Rcpp
-LinkingTo: Rcpp
+LinkingTo: Rcpp (>= 0.12.8)
 URL: https://github.com/jolars/valgrindtestr
 BugReports: https://github.com/jolars/valgrindtestr/issues
 RoxygenNote: 5.0.1
